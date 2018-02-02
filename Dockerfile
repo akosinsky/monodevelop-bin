@@ -1,9 +1,9 @@
 FROM akosinsky/monodevelop-src
 
-COPY gnome.flatpakrepo  /home
 COPY monodevelop.flatpakref /home
 
-RUN flatpak --assumeyes --verbose install /home/monodevelop.flatpakref
+RUN flatpak remote-add --no-gpg-verify gnome https://sdk.gnome.org/gnome.flatpakrepo && \
+flatpak --assumeyes --verbose install /home/monodevelop.flatpakref
 
 WORKDIR /home
 
