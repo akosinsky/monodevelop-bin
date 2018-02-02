@@ -1,12 +1,8 @@
 FROM akosinsky/monodevelop-src
 
-RUN cd /opt/source/7.4.0.884 && \
-./configure --profile=stable --enable-release && \
-make && \
-make install && \
-rm -rf /opt/source
+RUN flatpak --assumeyes --verbose install https://download.mono-project.com/repo/monodevelop.flatpakref
 
 WORKDIR /home
 
-CMD [ "/usr/local/bin/monodevelop" ]
+CMD [ "/bin/bash" ]
 
