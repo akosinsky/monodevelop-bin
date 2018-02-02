@@ -1,6 +1,8 @@
 FROM akosinsky/monodevelop-src
 
-RUN flatpak --assumeyes --verbose install https://download.mono-project.com/repo/monodevelop.flatpakref
+COPY monodevelop.flatpakref /home
+
+RUN flatpak --assumeyes --verbose install /home/monodevelop.flatpakref
 
 WORKDIR /home
 

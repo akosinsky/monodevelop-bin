@@ -1,0 +1,7 @@
+[Flatpak Ref]
+Title=MonoDevelop
+Name=com.xamarin.MonoDevelop
+Branch=stable
+Url=https://download.mono-project.com/repo/flatpak/
+IsRuntime=False
+RuntimeRepo=https://sdk.gnome.org/gnome.flatpakrepo
