@@ -1,0 +1,7 @@
+[Flatpak Repo]
+Title=Gnome Stable Runtimes
+Url=https://sdk.gnome.org/repo/
+Homepage=https://www.gnome.org/get-involved/
+Comment=The standard Gnome runtime used by most gnome apps
+Description=GNOME runtimes are released with each major release and contain the main GNOME platform libraries. At the moment they only receive minor bug fixing and security updates, but should be considered ABI stable and frozen.
+Icon=https://www.gnome.org/wp-content/themes/gnome-grass/images/gnome-logo.png
